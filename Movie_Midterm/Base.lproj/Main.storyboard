@@ -9,7 +9,7 @@
         <!--本週新片-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MovieViewController" customModule="Movie_Midterm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="MovieViewController" customModule="Movie_Midterm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,23 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vyc-2R-fyZ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="139" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vyc-2R-fyZ">
                                 <rect key="frame" x="20" y="64" width="560" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieTableViewCell" rowHeight="110" id="FZp-Fb-PjO" customClass="MovieTableViewCell" customModule="Movie_Midterm" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="560" height="110"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieTableViewCell" rowHeight="139" id="FZp-Fb-PjO" customClass="MovieTableViewCell" customModule="Movie_Midterm" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="139"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="FZp-Fb-PjO" id="eYb-GP-Xxk">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="109.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="138.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jxz-gK-Iae">
-                                                    <rect key="frame" x="21" y="8" width="81" height="93.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="jzl-Oo-xnd"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的少女時代" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="db1-Rx-1un">
                                                     <rect key="frame" x="117" y="8" width="190" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -51,6 +45,19 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jxz-gK-Iae">
+                                                    <rect key="frame" x="21" y="7" width="81" height="93.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="81" id="e6G-eB-XDF"/>
+                                                        <constraint firstAttribute="height" constant="60" id="jzl-Oo-xnd"/>
+                                                        <constraint firstAttribute="height" constant="80" id="tpC-Gy-ex1"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="jzl-Oo-xnd"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Jxz-gK-Iae" secondAttribute="bottom" id="QhH-V1-bjO"/>
@@ -72,10 +79,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vyc-2R-fyZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Knl-6E-DFe"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vyc-2R-fyZ" secondAttribute="bottom" id="Nzd-Rl-Uyz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vyc-2R-fyZ" secondAttribute="trailing" id="aeJ-PL-vUo"/>
                             <constraint firstItem="vyc-2R-fyZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fmw-z8-hzi"/>
-                            <constraint firstItem="vyc-2R-fyZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jTY-aa-KIq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="本週新片" id="JG2-Nh-s1Q"/>
@@ -148,6 +155,35 @@
             </objects>
             <point key="canvasLocation" x="2790" y="1035"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="OUl-dE-3lR">
+            <objects>
+                <viewController id="DPZ-Pg-d8n" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yOv-VO-08k"/>
+                        <viewControllerLayoutGuide type="bottom" id="6i4-3x-cCC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LhC-Xf-hbN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w9X-yr-sn1">
+                                <rect key="frame" x="195" y="170" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w9X-yr-sn1" firstAttribute="top" secondItem="LhC-Xf-hbN" secondAttribute="topMargin" id="ual-R7-3uZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OT1-o2-AyD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3634" y="1102"/>
+        </scene>
         <!--Movie-->
         <scene sceneID="Pc1-HB-xao">
             <objects>
@@ -167,10 +203,11 @@
                                     <constraint firstAttribute="height" constant="200" id="dkw-at-MQq"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhJ-PD-Jfr">
-                                <rect key="frame" x="279" y="331" width="42" height="200"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhJ-PD-Jfr">
+                                <rect key="frame" x="150" y="331" width="300" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="I0R-7r-dn6"/>
+                                    <constraint firstAttribute="width" constant="300" id="KhG-iW-SbT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
