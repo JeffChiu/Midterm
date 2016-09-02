@@ -10,9 +10,25 @@ import UIKit
 
 class FansViewController: UIViewController {
 
+    var signData: [String] = []
+    var signString = ""
+    
+    @IBOutlet weak var inputField: UITextField!
+    @IBOutlet weak var display: UITextView!
+    
+    @IBAction func addSign(sender: AnyObject) {
+        print(inputField.text!)
+        signData.append(inputField.text!)
+        for i in 0..<signData.count {
+            signString += ("\(signData[i]) \n")
+        }
+        display.text = signString
+        signString = ""
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        inputField.text = ""
         // Do any additional setup after loading the view.
     }
 
