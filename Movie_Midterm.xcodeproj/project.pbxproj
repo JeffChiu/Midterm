@@ -15,6 +15,7 @@
 		1F0DFCDB1D795FDD00CE2364 /* FansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DFCDA1D795FDD00CE2364 /* FansViewController.swift */; };
 		1F0DFCDD1D79600F00CE2364 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DFCDC1D79600F00CE2364 /* MovieDetailViewController.swift */; };
 		1F0DFCDF1D79666C00CE2364 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DFCDE1D79666C00CE2364 /* MovieTableViewCell.swift */; };
+		1F0DFCE11D797EBD00CE2364 /* SwfitFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DFCE01D797EBD00CE2364 /* SwfitFunction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1F0DFCDA1D795FDD00CE2364 /* FansViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FansViewController.swift; sourceTree = "<group>"; };
 		1F0DFCDC1D79600F00CE2364 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		1F0DFCDE1D79666C00CE2364 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		1F0DFCE01D797EBD00CE2364 /* SwfitFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwfitFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				1F0DFCDA1D795FDD00CE2364 /* FansViewController.swift */,
 				1F0DFCDC1D79600F00CE2364 /* MovieDetailViewController.swift */,
 				1F0DFCDE1D79666C00CE2364 /* MovieTableViewCell.swift */,
+				1F0DFCE01D797EBD00CE2364 /* SwfitFunction.swift */,
 			);
 			path = Movie_Midterm;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				1F0DFCC71D795D6B00CE2364 /* AppDelegate.swift in Sources */,
 				1F0DFCDB1D795FDD00CE2364 /* FansViewController.swift in Sources */,
 				1F0DFCD91D795FBB00CE2364 /* MovieViewController.swift in Sources */,
+				1F0DFCE11D797EBD00CE2364 /* SwfitFunction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
