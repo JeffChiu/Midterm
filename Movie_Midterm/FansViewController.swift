@@ -24,6 +24,7 @@ class FansViewController: UIViewController {
         }
         display.text = signString
         signString = ""
+        inputField.text = ""
     }
     
     override func viewDidLoad() {
