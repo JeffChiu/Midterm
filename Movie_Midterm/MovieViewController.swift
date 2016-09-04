@@ -13,7 +13,7 @@ import SDWebImage
 class MovieViewController: UIViewController {
     
     var movieList: [Movie] = []
-    
+    var refreshControl: UIRefreshControl!
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -30,10 +30,17 @@ class MovieViewController: UIViewController {
         
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
+     
+        //pull to refresh
+        refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(MovieViewController.prepareMovieList), forControlEvents: UIControlEvents.ValueChanged)
+        tableView.addSubview(refreshControl)
         
     }
 
     func prepareMovieList(){
+        movieList.removeAll()
         let moviesRef = FIRDatabase.database().reference().child("Movies")
 //        let moviesRef = Firebase(url:"https://movieapp-791fb.firebaseio.com")
         
@@ -48,6 +55,7 @@ class MovieViewController: UIViewController {
             print("nameFromFirebase = \(nameFromFirebase) \nimageFromFirebase = \(imageFromFirebase) \nstartDateFromFirebase = \(startDateFromFirebase)")
             
             self.tableView.reloadData()
+            self.refreshControl.endRefreshing()
             
         })
         

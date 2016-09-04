@@ -217,7 +217,7 @@
         <!--Movie-->
         <scene sceneID="Pc1-HB-xao">
             <objects>
-                <viewController title="Movie" id="QT5-sT-aka" customClass="MovieDetailViewController" customModule="Movie_Midterm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Movie" hidesBottomBarWhenPushed="YES" id="QT5-sT-aka" customClass="MovieDetailViewController" customModule="Movie_Midterm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c2a-7j-Kuy"/>
                         <viewControllerLayoutGuide type="bottom" id="Ntq-tr-h7Y"/>
