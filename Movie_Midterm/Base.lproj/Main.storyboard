@@ -29,14 +29,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="138.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的少女時代" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="db1-Rx-1un">
-                                                    <rect key="frame" x="117" y="8" width="190" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="電影名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="db1-Rx-1un">
+                                                    <rect key="frame" x="167" y="8" width="190" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="190" id="41D-gs-8gH"/>
+                                                        <constraint firstAttribute="height" constant="20" id="VC1-Xc-Wrn"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="上映日期：2016/09/02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3X-dB-DQh">
-                                                    <rect key="frame" x="353" y="88" width="207" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="上映日期：xxxx/xx/xx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3X-dB-DQh">
+                                                    <rect key="frame" x="352" y="88" width="200" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="Ey1-0q-FZg"/>
                                                         <constraint firstAttribute="width" constant="200" id="L7F-ek-Q5M"/>
@@ -46,26 +50,44 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jxz-gK-Iae">
-                                                    <rect key="frame" x="21" y="7" width="81" height="93.5"/>
+                                                    <rect key="frame" x="21" y="8" width="81" height="94"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="OvC-6I-WGN"/>
                                                         <constraint firstAttribute="width" constant="81" id="e6G-eB-XDF"/>
                                                         <constraint firstAttribute="height" constant="60" id="jzl-Oo-xnd"/>
                                                         <constraint firstAttribute="height" constant="80" id="tpC-Gy-ex1"/>
                                                     </constraints>
                                                     <variation key="default">
                                                         <mask key="constraints">
+                                                            <exclude reference="e6G-eB-XDF"/>
                                                             <exclude reference="jzl-Oo-xnd"/>
+                                                            <exclude reference="tpC-Gy-ex1"/>
                                                         </mask>
                                                     </variation>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="db1-Rx-1un" firstAttribute="top" secondItem="eYb-GP-Xxk" secondAttribute="topMargin" id="5tJ-3S-eXy"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Jxz-gK-Iae" secondAttribute="bottom" constant="29.5" id="B34-eQ-0C7"/>
+                                                <constraint firstItem="db1-Rx-1un" firstAttribute="centerX" secondItem="eYb-GP-Xxk" secondAttribute="centerX" id="CPS-dh-L21"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Jxz-gK-Iae" secondAttribute="bottom" id="QhH-V1-bjO"/>
+                                                <constraint firstItem="db1-Rx-1un" firstAttribute="leading" secondItem="Jxz-gK-Iae" secondAttribute="trailing" constant="15" id="Rfe-WF-Baa"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="D3X-dB-DQh" secondAttribute="bottom" id="VHB-K0-QPh"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="D3X-dB-DQh" secondAttribute="trailing" id="Xab-cJ-mex"/>
+                                                <constraint firstItem="D3X-dB-DQh" firstAttribute="top" secondItem="eYb-GP-Xxk" secondAttribute="topMargin" constant="80" id="YIW-PW-GJo"/>
+                                                <constraint firstItem="Jxz-gK-Iae" firstAttribute="top" secondItem="eYb-GP-Xxk" secondAttribute="topMargin" id="Yef-Ai-0IB"/>
                                                 <constraint firstItem="Jxz-gK-Iae" firstAttribute="top" secondItem="eYb-GP-Xxk" secondAttribute="topMargin" id="brQ-bw-VEU"/>
                                                 <constraint firstItem="Jxz-gK-Iae" firstAttribute="leading" secondItem="eYb-GP-Xxk" secondAttribute="leadingMargin" constant="13" id="efQ-aB-5qv"/>
+                                                <constraint firstItem="Jxz-gK-Iae" firstAttribute="leading" secondItem="eYb-GP-Xxk" secondAttribute="leadingMargin" id="wWN-bO-N3V"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="QhH-V1-bjO"/>
+                                                    <exclude reference="brQ-bw-VEU"/>
+                                                    <exclude reference="efQ-aB-5qv"/>
+                                                    <exclude reference="Rfe-WF-Baa"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="movieImageView" destination="Jxz-gK-Iae" id="vE9-8g-g3v"/>
@@ -106,10 +128,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="w85-wY-hdD">
-                                <rect key="frame" x="171" y="106" width="186" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="w85-wY-hdD">
+                                <rect key="frame" x="207" y="114" width="186" height="30"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lpa-lq-Rno">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lpa-lq-Rno">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="EWO-rd-FG9"/>
@@ -118,7 +140,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX9-vs-m6X">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX9-vs-m6X">
                                         <rect key="frame" x="126" y="0.0" width="60" height="30"/>
                                         <state key="normal" title="新增簽名"/>
                                         <connections>
@@ -126,6 +148,10 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="Dbc-Rc-09v"/>
+                                    <constraint firstAttribute="height" constant="30" id="yqt-Qr-CQB"/>
+                                </constraints>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgk-At-w22">
                                 <rect key="frame" x="150" y="150" width="300" height="300"/>
@@ -142,8 +168,15 @@
                         <constraints>
                             <constraint firstItem="mgk-At-w22" firstAttribute="centerY" secondItem="g2e-aJ-xWr" secondAttribute="centerY" id="6dI-LP-kRM"/>
                             <constraint firstItem="mgk-At-w22" firstAttribute="centerX" secondItem="g2e-aJ-xWr" secondAttribute="centerX" id="8hW-OE-RQn"/>
+                            <constraint firstItem="w85-wY-hdD" firstAttribute="top" secondItem="aYj-5z-jIS" secondAttribute="bottom" constant="50" id="ERq-tB-2V3"/>
                             <constraint firstItem="w85-wY-hdD" firstAttribute="centerX" secondItem="g2e-aJ-xWr" secondAttribute="centerX" id="GBl-td-umL"/>
+                            <constraint firstItem="w85-wY-hdD" firstAttribute="centerX" secondItem="g2e-aJ-xWr" secondAttribute="centerX" id="Rpb-3a-B5b"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GBl-td-umL"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="T7f-lV-Dao"/>
                     <connections>

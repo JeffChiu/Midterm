@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MovieDetailViewController: UIViewController {
 
@@ -19,8 +20,8 @@ class MovieDetailViewController: UIViewController {
         super.viewDidLoad()
 
         self.title = movie.name
-        imageView.image = UIImage(named:  movie.image)
-        info.text = movie.description
+        self.imageView.sd_setImageWithURL(NSURL(string: movie.image))
+        self.info.text = movie.description
     }
 
     override func didReceiveMemoryWarning() {

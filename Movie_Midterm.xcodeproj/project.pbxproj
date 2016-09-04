@@ -17,6 +17,8 @@
 		1F0DFCDF1D79666C00CE2364 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DFCDE1D79666C00CE2364 /* MovieTableViewCell.swift */; };
 		1F0DFCE11D797EBD00CE2364 /* SwfitFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DFCE01D797EBD00CE2364 /* SwfitFunction.swift */; };
 		1F33AF661D7AC7730035912F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F33AF651D7AC7730035912F /* Movie.swift */; };
+		1F8EAACC1D7C6A6F00F63E9F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F8EAACB1D7C6A6F00F63E9F /* GoogleService-Info.plist */; };
+		554269278534608160B5A1DB /* Pods_Movie_Midterm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78BA588202FD49ADD5BE210F /* Pods_Movie_Midterm.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		1F0DFCDE1D79666C00CE2364 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		1F0DFCE01D797EBD00CE2364 /* SwfitFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwfitFunction.swift; sourceTree = "<group>"; };
 		1F33AF651D7AC7730035912F /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../Movie.swift; sourceTree = "<group>"; };
+		1F8EAACB1D7C6A6F00F63E9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		78BA588202FD49ADD5BE210F /* Pods_Movie_Midterm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movie_Midterm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		901F71B8FE9C0BFEA7C6066A /* Pods-Movie_Midterm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie_Midterm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Movie_Midterm/Pods-Movie_Midterm.release.xcconfig"; sourceTree = "<group>"; };
+		E2E34BA723051C26EB51095D /* Pods-Movie_Midterm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie_Midterm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Movie_Midterm/Pods-Movie_Midterm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554269278534608160B5A1DB /* Pods_Movie_Midterm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +57,8 @@
 			children = (
 				1F0DFCC51D795D6B00CE2364 /* Movie_Midterm */,
 				1F0DFCC41D795D6B00CE2364 /* Products */,
+				5E67B9F044425327EE75747A /* Pods */,
+				F71EC4DD8E8A90D607A01E62 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,8 +84,26 @@
 				1F33AF651D7AC7730035912F /* Movie.swift */,
 				1F0DFCDA1D795FDD00CE2364 /* FansViewController.swift */,
 				1F0DFCE01D797EBD00CE2364 /* SwfitFunction.swift */,
+				1F8EAACB1D7C6A6F00F63E9F /* GoogleService-Info.plist */,
 			);
 			path = Movie_Midterm;
+			sourceTree = "<group>";
+		};
+		5E67B9F044425327EE75747A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2E34BA723051C26EB51095D /* Pods-Movie_Midterm.debug.xcconfig */,
+				901F71B8FE9C0BFEA7C6066A /* Pods-Movie_Midterm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F71EC4DD8E8A90D607A01E62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78BA588202FD49ADD5BE210F /* Pods_Movie_Midterm.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F0DFCD51D795D6B00CE2364 /* Build configuration list for PBXNativeTarget "Movie_Midterm" */;
 			buildPhases = (
+				9DF63E4D9974968BC6B99369 /* [CP] Check Pods Manifest.lock */,
 				1F0DFCBF1D795D6B00CE2364 /* Sources */,
 				1F0DFCC01D795D6B00CE2364 /* Frameworks */,
 				1F0DFCC11D795D6B00CE2364 /* Resources */,
+				A8C720B515F2521A9336F3EB /* [CP] Embed Pods Frameworks */,
+				648CC0E2C4F94A5E73AEDED7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -111,6 +141,7 @@
 				TargetAttributes = {
 					1F0DFCC21D795D6B00CE2364 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = E3HZPU6RL5;
 					};
 				};
 			};
@@ -138,12 +169,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F0DFCD11D795D6B00CE2364 /* LaunchScreen.storyboard in Resources */,
+				1F8EAACC1D7C6A6F00F63E9F /* GoogleService-Info.plist in Resources */,
 				1F0DFCCE1D795D6B00CE2364 /* Assets.xcassets in Resources */,
 				1F0DFCCC1D795D6B00CE2364 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		648CC0E2C4F94A5E73AEDED7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Movie_Midterm/Pods-Movie_Midterm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DF63E4D9974968BC6B99369 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A8C720B515F2521A9336F3EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Movie_Midterm/Pods-Movie_Midterm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F0DFCBF1D795D6B00CE2364 /* Sources */ = {
@@ -269,23 +349,31 @@
 		};
 		1F0DFCD61D795D6B00CE2364 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2E34BA723051C26EB51095D /* Pods-Movie_Midterm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Movie_Midterm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ac.Movie-Midterm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		1F0DFCD71D795D6B00CE2364 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 901F71B8FE9C0BFEA7C6066A /* Pods-Movie_Midterm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Movie_Midterm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ac.Movie-Midterm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
