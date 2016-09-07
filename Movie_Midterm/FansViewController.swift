@@ -25,12 +25,17 @@ class FansViewController: UIViewController {
         display.text = signString
         signString = ""
         inputField.text = ""
+        inputField.resignFirstResponder()
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         inputField.text = ""
         // Do any additional setup after loading the view.
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(FansViewController.tapFunction))
+        self.view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +43,10 @@ class FansViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func tapFunction() {
+        inputField.resignFirstResponder()
+    }
+    
     /*
     // MARK: - Navigation
 

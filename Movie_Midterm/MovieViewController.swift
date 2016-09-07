@@ -27,7 +27,7 @@ class MovieViewController: UIViewController {
         self.prepareMovieList()
         
         tableView.dataSource = self
-        
+    
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
      
@@ -42,8 +42,6 @@ class MovieViewController: UIViewController {
     func prepareMovieList(){
         movieList.removeAll()
         let moviesRef = FIRDatabase.database().reference().child("Movies")
-//        let moviesRef = Firebase(url:"https://movieapp-791fb.firebaseio.com")
-        
         moviesRef.observeEventType(.ChildAdded, withBlock: {
             snapshot in
             let nameFromFirebase = snapshot.value?.objectForKey("name") as! String

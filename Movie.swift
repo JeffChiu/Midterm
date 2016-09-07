@@ -14,8 +14,7 @@ class Movie {
     var startDate: String = ""
     var description: String = ""
     
-    init(){
-    }
+    init() {}
     
     init(name: String, image: String, startDate: String, description: String){
         self.name = name
